@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Atelier de Estrada Home</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type = "text/javascript">
+        function getPositionXY(element) {
+            var rect = element.getBoundingClientRect();
+            document.getElementById('text').innerHTML 
+            = 'X: ' + rect.x + '<br>' + 'Y: ' + rect.y;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!--<div onmouseover = "getPositionXY(this)">
+                Position:
+                <p id = 'text'></p>
+            </div>-->
+            <nav class="navbar flex-row container">
+                <img class="hamburguesa" src="imagenes./hamburger-menu.png">
+                <ul class="menu flex-row">
+                  <li class="menu__item"><a class="menu__link" href="./arte.html">Arte</a></li>
+                  <li class="menu__item"><a class="menu__link" href="./sobre-mi.html">Sobre mi</a></li>
+                  <li class="menu__item"><a class="menu__link" href="./arquitectura.html">Arquitectura</a></li>
+                </ul>
+        </nav>    
+    </header>
+    <section class="flex-row">
+        <img id="logo_horizontal" src="imagenes/horizontallineas.png" alt="logo" usemap="#logo" width= 800px;>
+        <img id="logo_vertical" src="imagenes/logovertical.png" alt="logo" usemap="#logo" width= 800px;>
+        <!--<map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Arte" href="arte.html">
+            <area shape="rect" coords="290,172,333,250" alt="Arquitectura" href="arquitectura.html">
+            <area shape="circle" coords="337,300,44" alt="Atelier" href="contacto.html">
+          </map>-->
+    </section>
+    <footer class="flex-row">
+        <div class="flex-row">
+            <a target="_blank" href="./contacto.html"><img src="imagenes/mail.png" width="35px" /></a>
+        <a target="_blank" href="https://www.linkedin.com"><img src="imagenes/linkedingris.png" width="35px" /></a>
+        <a target="_blank" href="https://www.instagram.com/atelier.de.estrada/"><img src="imagenes/Insta.png" width="40px" /></a>
+        </div>
+    </footer>
+</body>
+</html>
