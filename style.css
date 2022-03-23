@@ -347,14 +347,18 @@ section {
         overflow: hidden; /*para que no haya scroll*/
 
     }
-    /*#footer_contacto {
+    #footer_contacto {
        height: 10vh;
-       width: 503px;
        position: absolute;
-        bottom: -30px;   */
+        bottom: -30px;
+        width: -webkit-fill-available;
 
+    }
     #section_contacto {
         margin: 0 5rem;
         height: 100vh;
+    }
+    #body_sobremi {
+        overflow: hidden;
     }
 }
