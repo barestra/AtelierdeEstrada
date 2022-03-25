@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/index.css"/>
 </head>
 
 <body>
     <header>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a class="menu__link" href="./arte.html">Arte</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./sobre-mi.html">Sobre mi</a></li>
-                    <li class="menu__item"><a class="menu__link" href="./arquitectura.html">Arquitectura</a></li>
-                </ul>
-            </nav>    
-        </header>
-    </header>
+        <nav class="navbar flex-row container">
+          <img class="hamburguesa" src="imagenes./hamburger-menu.png">
+          <ul class="menu flex-row">
+            <li class="menu__item"><a class="menu__link" href="./arte.html">Arte</a></li>
+            <li class="menu__item"><a class="menu__link" href="./sobre-mi.html">Sobre mi</a></li>
+            <li class="menu__item"><a class="menu__link" href="./arquitectura.html">Arquitectura</a></li>
+          </ul>
+      </header>
     <section>
         <h2 class="titulo">Obras artisticas</h2>
         <p class="TextoTitulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione illum inventore quod
@@ -52,11 +50,14 @@
             </div>
         </article>
     </section>
-    <footer>
-        <a href="./contacto.html">contact</a>
-        <a target="_blank" href="https://www.linkedin.com"><img src="imagenes/Linkedin.png" width="40px" /></a>
-        <a target="_blank" href="https://www.instagram.com/atelier.de.estrada/"><img src="imagenes/Insta.png" width="40px" /></a>
-    </footer>
+    <footer class="flex-row">
+        <div class="flex-row">
+          <a target="_blank" href="./contacto.html"><img src="imagenes/mail.png" width="35px" /></a>
+          <a target="_blank" href="https://www.linkedin.com"><img src="imagenes/linkedingris.png" width="35px" /></a>
+        <a target="_blank" href="https://www.instagram.com/atelier.de.estrada/"><img src="imagenes/Insta.png"
+            width="40px" /></a>
+        </div>
+      </footer>
 </body>
 
 </html>

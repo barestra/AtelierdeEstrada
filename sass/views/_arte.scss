@@ -1,0 +1,39 @@
+.obrasArte {
+    transition: box-shadow 0.4s ease;
+    background: url(../imagenes/FotoArq1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+    padding: 0rem;
+    overflow: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    }
+}
+.ObrasArte
+#art1 {
+    background: url(../imagenes/FotoArte1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#art2 {
+    background: url(../imagenes/FotoArte2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#art3 {
+    background: url(../imagenes/FotoArte3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#art4 {
+    background: url(../imagenes/FotoArte4.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}

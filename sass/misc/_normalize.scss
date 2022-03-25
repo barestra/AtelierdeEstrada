@@ -1,0 +1,24 @@
+/*normalize*/
+*,
+*::before
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+}
+/* globals*/
+html {
+    font-family: $font-primary;
+    color: $principal;
+    font-size: 62.5%; /*para porder calcular + facil los rem*/
+}
+.menu {
+    list-style: none;
+    gap: 30px;
+ }
+ a {
+     text-decoration: none;
+     color: inherit;
+     display: inline-block; /*para q tome padding asignado, aunque en este caso no querramos que esten uno al lado del otro*/
+ }

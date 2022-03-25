@@ -1,0 +1,78 @@
+/*ARQUITECTURA*/
+section {
+    .titulo {
+        font-size: 6em;
+        text-align: center;
+        margin: 1.5rem;
+    }
+    .textotitulo {
+        font-size: 10em;
+        margin: 1.5rem;
+        padding: 4rem;
+        text-align: center;
+    }
+
+}
+
+.sectionArq {
+    justify-content: space-between;
+}
+.obrasArq {
+    transition: box-shadow 0.4s ease;
+    background: url(../imagenes/foto1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 2rem;
+    padding: 0rem;
+    overflow: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+/*ARQ FOTOS*/
+#arq1 {
+    background: url(../imagenes/foto1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#arq2 {
+    background: url(../imagenes/FotoArq1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#arq3 {
+    background: url(../imagenes/FotoArq2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#arq4 {
+    background: url(../imagenes/fotoArq3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.textoInterno {
+    transition: opacity 0.4s ease;
+    background-color: #000;
+    color: #fff;
+    opacity: 0;
+    width: 300px;
+    height: 100px;
+    margin: 2rem;
+    padding: 1rem;
+    position:relative;
+    top: 65px;
+    right: 30px;
+    &:hover {
+        opacity: .5;
+    }
+}

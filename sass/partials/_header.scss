@@ -1,0 +1,31 @@
+/*header & navbar */
+header  {
+    .navbar {
+    min-height: 10vh; /*vh relativo al tamaño de la pantalla*/
+    justify-content: space-between;
+    align-items:center;
+    overflow: hidden;
+    position:relative;
+    }
+    nav {
+        height: 10vh;
+    }
+    .menu {
+        display: none;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+    
+    /*menu hamburguesa*/
+    .hamburguesa {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8em;
+  }
+}
+
+ 

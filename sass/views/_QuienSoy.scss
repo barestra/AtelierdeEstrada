@@ -1,0 +1,51 @@
+ /*SOBRE MI*/
+ .container {
+    max-width: 1080px; /*para q aunque la pantalla sea muy grande se mantenga*/
+    margin: 0 5rem;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+/*SOBRE MI_FOTO*/
+#foto_quiensoy {
+    flex-basis: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    /*flex-grow: 1;*/
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    width: 100%;
+}
+#foto_quiensoy__item {
+    max-width: 400px;
+    max-height: 400px;
+    width:100%; 
+}
+/*SOBRE MI_TEXTO*/
+#texto_quienSoy {
+    width: 100%;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    /*flex-grow: 1;*/
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+@media screen and (max-width: 768px) {
+    #foto_quiensoy {
+        flex-grow: 1;
+    }
+    #texto_quienSoy {
+        flex-grow: 1;
+        padding-top: 0%;
+        justify-content: flex-start;
+    }
+    #body_sobremi {
+        overflow: hidden;
+    }
+}
