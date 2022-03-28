@@ -7,3 +7,14 @@ $text-lg: 30px;
 $text-med: 20px;
 $text-sma: 10px;
 
+
+$spacings: (
+    large:3rem,
+    medium:2rem,
+    small:1rem,
+);
+@each $var, $val in $spacings {
+    .sp-#{$var} {
+        margin: #{$var};    
+    }
+}

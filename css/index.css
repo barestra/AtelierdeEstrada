@@ -1,11 +1,19 @@
 @charset "UTF-8";
 /*VARIABLES*/
 /*variables*/
+.sp-large {
+  margin: large; }
+
+.sp-medium {
+  margin: medium; }
+
+.sp-small {
+  margin: small; }
+
 /*GLOBALES*/
 /*normalize*/
 *,
-*::before
-*::after {
+*::before *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -61,18 +69,20 @@ body {
     /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/ } }
 
 /*FOOTER*/
-footer {
+footer, footer #footer_contacto {
   background-color: #000000;
   padding: 3rem;
   color: #fff;
   height: 4vh;
   justify-content: flex-start; }
-  footer div {
+  footer div, footer #footer_contacto div {
     justify-content: space-between;
     width: 30vh;
     align-items: center;
     font-size: 1.4em;
     font-style: none; }
+  footer #footer_contacto .icono_contacto {
+    visibility: hidden; }
 
 /*header & navbar */
 header {
@@ -175,18 +185,22 @@ section .textotitulo {
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  margin: 2rem;
   padding: 0rem;
   overflow: auto;
-  display: inline-block;
   overflow: hidden;
   border-radius: 0.3rem;
   cursor: pointer; }
   .obrasArte:hover {
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5); }
 
-.ObrasArte
-#art1 {
+.conj_obras_arte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; }
+
+.ObrasArte #art1 {
   background: url(../imagenes/FotoArte1.jpg);
   background-size: cover;
   background-repeat: no-repeat; }

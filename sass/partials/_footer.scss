@@ -13,4 +13,10 @@ footer {
       font-size: 1.4em;
       font-style: none;
    }
+   #footer_contacto {
+      @extend footer;
+      .icono_contacto {
+         visibility:hidden; 
+      }
+   }
 }
