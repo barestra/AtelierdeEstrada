@@ -1,19 +1,11 @@
 @charset "UTF-8";
 /*VARIABLES*/
 /*variables*/
-.sp-large {
-  margin: large; }
-
-.sp-medium {
-  margin: medium; }
-
-.sp-small {
-  margin: small; }
-
 /*GLOBALES*/
 /*normalize*/
 *,
-*::before *::after {
+*::before
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,20 +61,21 @@ body {
     /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/ } }
 
 /*FOOTER*/
-footer, footer #footer_contacto {
+footer {
   background-color: #000000;
   padding: 3rem;
   color: #fff;
   height: 4vh;
   justify-content: flex-start; }
-  footer div, footer #footer_contacto div {
+  footer div {
     justify-content: space-between;
     width: 30vh;
     align-items: center;
     font-size: 1.4em;
     font-style: none; }
-  footer #footer_contacto .icono_contacto {
-    visibility: hidden; }
+
+#footer_contacto {
+  height: 10vh; }
 
 /*header & navbar */
 header {
@@ -111,19 +104,21 @@ header {
 
 /*VIEWS*/
 /*ARQUITECTURA*/
-section .titulo {
+.titulo {
   font-size: 6em;
   text-align: center;
   margin: 1.5rem; }
 
-section .textotitulo {
-  font-size: 10em;
+.TextoTitulo {
+  font-size: 10px;
   margin: 1.5rem;
   padding: 4rem;
   text-align: center; }
 
-.sectionArq {
-  justify-content: space-between; }
+.div_imagenes {
+  justify-content: space-between;
+  margin-left: 4em;
+  margin-right: 4em; }
 
 .obrasArq {
   transition: box-shadow 0.4s ease;
@@ -178,6 +173,19 @@ section .textotitulo {
   .textoInterno:hover {
     opacity: .5; }
 
+@media screen and (max-width: 768px) {
+  .body_arqart {
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /*1fr=todo el espacio restante*/
+    min-height: 140vh;
+    /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/ }
+  .section_arq {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; } }
+
 .obrasArte {
   transition: box-shadow 0.4s ease;
   background: url(../imagenes/FotoArq1);
@@ -193,14 +201,8 @@ section .textotitulo {
   .obrasArte:hover {
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5); }
 
-.conj_obras_arte {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem; }
-
-.ObrasArte #art1 {
+.ObrasArte
+#art1 {
   background: url(../imagenes/FotoArte1.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
@@ -232,7 +234,7 @@ section .textotitulo {
   align-content: center;
   justify-items: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 80vh;
   margin-top: 0;
   margin-right: 15em;
   margin-bottom: 0;

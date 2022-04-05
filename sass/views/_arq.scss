@@ -1,22 +1,25 @@
 /*ARQUITECTURA*/
-section {
+    
     .titulo {
         font-size: 6em;
         text-align: center;
         margin: 1.5rem;
     }
-    .textotitulo {
-        font-size: 10em;
+    .TextoTitulo {
+        font-size: $text-sma;
         margin: 1.5rem;
         padding: 4rem;
         text-align: center;
     }
+    .div_imagenes {
+        justify-content: space-between;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    
 
-}
 
-.sectionArq {
-    justify-content: space-between;
-}
+
 .obrasArq {
     transition: box-shadow 0.4s ease;
     background: url(../imagenes/foto1.jpg);
@@ -75,4 +78,18 @@ section {
     &:hover {
         opacity: .5;
     }
+}
+@media screen and (max-width: 768px) {
+    .body_arqart {
+        margin: 0;
+        display: grid;
+        grid-template-rows: auto 1fr auto; /*1fr=todo el espacio restante*/
+        min-height: 140vh; /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/
+    }
+    .section_arq {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }

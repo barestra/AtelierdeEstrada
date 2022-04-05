@@ -13,10 +13,3 @@ body {
     grid-template-rows: auto 1fr auto; /*1fr=todo el espacio restante*/
     min-height: 100vh; /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/
 }
-@mixin flex($direction, $justify, $align, $gap) {
-    display:flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-    gap: $gap;
-}
