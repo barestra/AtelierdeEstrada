@@ -6,6 +6,9 @@
    display: none;
 }
 #logo_horizontal {
+  width: 800px;
+  height: 400px;
+  object-fit: contain;
   position: relative;
   right: 2em; /*queda descentrado porq la imagen es asi, desp recortar*/
 }
