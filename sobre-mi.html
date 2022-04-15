@@ -12,14 +12,15 @@
 
 <body id="body_sobremi">
   <header>
-    <nav class="navbar flex-row container">
-      <img class="hamburguesa" src="imagenes./hamburger-menu.png">
-      <ul class="menu flex-row">
-        <li class="menu__item"><a class="menu__link" href="./arte.html">Arte</a></li>
-        <li class="menu__item"><a class="menu__link" href="./sobre-mi.html">Sobre mi</a></li>
-        <li class="menu__item"><a class="menu__link" href="./arquitectura.html">Arquitectura</a></li>
-      </ul>
-  </header>
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn"><a href="index.html">MENU</a></button>
+        <div class="dropdown-content"  >
+            <a class="menu__link" href="./arte.html">Arte</a>
+            <a class="menu__link" href="./sobre-mi.html">Sobre mi</a>
+            <a class="menu__link" href="./arquitectura.html">Arquitectura</a>
+        </div>
+    </div> 
+</header>
   <section class="container flex-row">
     <picture id="foto_quiensoy">
       <img id="foto_quiensoy__item"src="imagenes/QuienSoy.jpg";/>
