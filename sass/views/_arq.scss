@@ -7,9 +7,10 @@
     }
     .TextoTitulo {
         font-size: $text-sma;
-        margin: 1.5rem;
-        padding: 4rem;
         text-align: center;
+        margin: 0 auto;
+        padding: 4rem;
+        width: 600px;
     }
     .div_imagenes {
         justify-content: space-between;
@@ -68,13 +69,13 @@
     background-color: #000;
     color: #fff;
     opacity: 0;
-    width: 300px;
+    width: 193px;
     height: 100px;
-    margin: 2rem;
+    margin: 0 auto;
     padding: 1rem;
-    position:relative;
-    top: 65px;
-    right: 30px;
+    position: relative;
+    top: 87px;
+    right: 0px;
     &:hover {
         opacity: .5;
     }

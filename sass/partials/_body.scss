@@ -12,3 +12,7 @@
         min-height: 104vh; /*para que no quede arriba el footer y el body ocupe todo el alto de la pag*/
     }
 }
+section {
+    max-width: 992px;
+    margin: 0 auto;
+}
