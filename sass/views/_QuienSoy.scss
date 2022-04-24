@@ -1,42 +1,61 @@
- /*SOBRE MI*/
- .container {
-    max-width: 1080px; /*para q aunque la pantalla sea muy grande se mantenga*/
-    margin: 0 5rem;
+
+/*SOBRE MI*/
+.container {
+    margin: 0 auto;
+    width: 80%;
     gap: 5rem;
     justify-content: center;
-    flex-wrap: wrap;  
+    align-content: center;
 }
+
 /*SOBRE MI_FOTO*/
 #foto_quiensoy {
     flex-basis: 50%;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 300px;
-    max-height: 300px;
+
     /*flex-grow: 1;*/
     justify-content: center;
     position: relative;
     top: 100px;
     width: 100%;
 }
+
 #foto_quiensoy__item {
-    max-width: 400px;
-    max-height: 400px;
-    width:100%; 
+    width: 300px;
+    height: 300px;
+    // max-width: 400px;
+    // max-height: 400px;
 }
+
 /*SOBRE MI_TEXTO*/
 #texto_quienSoy {
-    width: 100%;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
     /*flex-grow: 1;*/
     justify-content: center;
     position: relative;
     top: 100px;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 700px) {
+    .container {
+        margin-top: -10vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: fit-content;
+        gap:0;
+        width: 100%;
+    }
+    #foto_quiensoy {
+        display: flex;
+    }
+    #texto_quienSoy {
+        width: 450px;
+        align-items: center;
+    }
+}
+
+/*
     #foto_quiensoy {
         flex-grow: 1;
     }
@@ -47,5 +66,4 @@
     }
     #body_sobremi {
         overflow: hidden;
-    }
-}
+    }*/
