@@ -1,22 +1,22 @@
 
 /*SOBRE MI*/
-.container {
-    margin: 0 auto;
+.containerSobreMi {
+    margin: 2em auto 10em auto;
     width: 80%;
     gap: 5rem;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 /*SOBRE MI_FOTO*/
 #foto_quiensoy {
-    flex-basis: 50%;
-
+    // flex-basis: 50%;
     /*flex-grow: 1;*/
-    justify-content: center;
-    position: relative;
-    top: 100px;
-    width: 100%;
+    // justify-content: center;
+    // position: relative;
+    // top: 100px;
+    // width: 100%;
+    align-items: center;
 }
 
 #foto_quiensoy__item {
@@ -32,25 +32,26 @@
     height: 300px;
     /*flex-grow: 1;*/
     justify-content: center;
-    position: relative;
-    top: 100px;
+    // position: relative;
+    // top: 100px;
+    font-size: $text-med;
+}
+.tituloQuienSoy {
+    font-size: $text-lg;
 }
 
 @media screen and (max-width: 700px) {
-    .container {
-        margin-top: -10vh;
+    .containerSobreMi {
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        height: fit-content;
         gap:0;
-        width: 100%;
+        margin-left: 2em;
+        margin-right: 2em;
     }
     #foto_quiensoy {
         display: flex;
     }
     #texto_quienSoy {
-        width: 450px;
+        width: 80%;
         align-items: center;
     }
 }
