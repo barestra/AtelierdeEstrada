@@ -10,30 +10,19 @@
 
 /*SOBRE MI_FOTO*/
 #foto_quiensoy {
-    // flex-basis: 50%;
-    /*flex-grow: 1;*/
-    // justify-content: center;
-    // position: relative;
-    // top: 100px;
-    // width: 100%;
     align-items: center;
 }
 
 #foto_quiensoy__item {
     width: 300px;
     height: 300px;
-    // max-width: 400px;
-    // max-height: 400px;
 }
 
 /*SOBRE MI_TEXTO*/
 #texto_quienSoy {
     width: 300px;
     height: 300px;
-    /*flex-grow: 1;*/
     justify-content: center;
-    // position: relative;
-    // top: 100px;
     font-size: $text-med;
 }
 .tituloQuienSoy {
@@ -55,16 +44,3 @@
         align-items: center;
     }
 }
-
-/*
-    #foto_quiensoy {
-        flex-grow: 1;
-    }
-    #texto_quienSoy {
-        flex-grow: 1;
-        padding-top: 0%;
-        justify-content: flex-start;
-    }
-    #body_sobremi {
-        overflow: hidden;
-    }*/
